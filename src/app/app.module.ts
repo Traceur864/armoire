@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FilterPipe } from './productos/filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,11 +18,13 @@ import { ProductosComponent } from './productos/productos.component';
     ContactoComponent,
     HeaderComponent,
     FooterComponent,
-    ProductosComponent
+    ProductosComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

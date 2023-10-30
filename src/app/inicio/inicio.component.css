@@ -1,0 +1,46 @@
+.inicio-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .header p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .imagen-destacada {
+    margin: 20px 0;
+  }
+  
+  .imagen-destacada img {
+    max-width: 100%;
+  }
+  
+  .galeria-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .imagen-miniatura {
+    margin: 5px;
+    border: 1px solid #ddd;
+    width: 140px; /* Ancho deseado */
+    height: 270px; /* Alto deseado */
+    overflow: hidden;
+  }
+  
+  .imagen-miniatura img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa todo el alto del contenedor */
+    object-fit: cover; /* Ajusta proporcionalmente y cubre el contenedor */
+  }

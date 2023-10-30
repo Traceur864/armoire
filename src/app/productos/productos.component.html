@@ -1,1 +1,25 @@
-<p>productos works!</p>
+<section class="productos-section">
+    <div class="filtro">
+      <label for="filtroSecciones">Filtrar por sección:</label>
+      <select id="filtroSecciones" [(ngModel)]="filtroSeccion">
+        <option value="todos">Todos</option>
+        <option value="ropa">Ropa</option>
+        <option value="accesorios">Accesorios</option>
+        <!-- Agrega más opciones según sea necesario -->
+      </select>
+    </div>
+  
+    <div class="buscador">
+      <input type="text" placeholder="Buscar productos" [(ngModel)]="filtroBusqueda">
+    </div>
+  
+    <div class="galeria-productos">
+      <div class="producto-miniatura" *ngFor="let producto of productos | filter: filtroSeccion: filtroBusqueda">
+        <img [src]="producto.imagen" alt="Producto">
+        <h3>{{ producto.nombre }}</h3>
+        <p>{{ producto.descripcion }}</p>
+        <p class="seccion">{{ producto.seccion }}</p>
+      </div>
+    </div>
+  </section>
+  
