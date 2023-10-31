@@ -45,7 +45,7 @@ export class ProductosComponent {
     { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa9.jpg' },
   ];
 
-  filtroSeccion = 'ropa';
+  filtroSeccion = 'todos';
   filtroBusqueda = '';
 
   filtrarProductos() {
