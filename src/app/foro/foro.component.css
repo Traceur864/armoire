@@ -1,0 +1,72 @@
+.foro {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .foro h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .lista-hilos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hilo {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .hilo a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .crear-hilo {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .crear-hilo h2 {
+    font-size: 20px;
+  }
+  
+  .crear-hilo form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .crear-hilo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .crear-hilo input,
+  .crear-hilo textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .crear-hilo button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .crear-hilo button:hover {
+    background-color: #0056b3;
+  }
+  

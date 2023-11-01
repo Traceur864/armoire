@@ -32,8 +32,10 @@
     border-radius: 5px;
     transition: border-color .55s ease;
     appearance: none;
-    background: url('/assets/icon/arrow.png') no-repeat right center;
-    padding-right: 20px;
+    background: url('/assets/icon/arrow4.png') no-repeat right center;
+    padding-right: 50px;
+    background-size: 14px;
+    background-position: calc(100% - 20px) center;
   }
 
   .container-1 {

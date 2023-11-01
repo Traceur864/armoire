@@ -10,6 +10,10 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductosComponent } from './productos/productos.component';
+import { ForoComponent } from './foro/foro.component';
+import { ForoService } from './service/foro.service';
+import { HiloCompletoComponent } from './hilo-completo/hilo-completo.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,13 +24,16 @@ import { ProductosComponent } from './productos/productos.component';
     FooterComponent,
     ProductosComponent,
     FilterPipe,
+    ForoComponent,
+    HiloCompletoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
-  providers: [],
+  providers: [ForoService,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
