@@ -1,16 +1,20 @@
 <section class="inicio-section">
   <div class="header">
-    <h1>Bienvenido a Armoire</h1>
-    <p>Descubre las últimas tendencias en la industria de la moda.</p>
+
+    <img src="/assets/img/texto.png" alt="style" id="text-log">
+     <hr>
+     <hr>
   </div>
   <ngb-carousel *ngIf="slides">
     <ng-template ngbSlide *ngFor="let slide of slides">
-      <img [src]="slide.image" alt="{{ slide.title }}" style="width: 500px; height: 470px;">
+      <img [src]="slide.image" alt="{{ slide.title }}" style="width: 700px; height: 500px;">
       <div class="carousel-caption">
         <h3>{{ slide.title }}</h3>
       </div>
     </ng-template>
   </ngb-carousel>
+  <hr>
+  <hr>
 
     <div class="imagen-destacada">
       <img src="/assets/img/ropa1.jpg" alt="Imagen Destacada">

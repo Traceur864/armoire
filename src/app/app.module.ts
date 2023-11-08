@@ -14,6 +14,7 @@ import { ForoComponent } from './foro/foro.component';
 import { ForoService } from './service/foro.service';
 import { HiloCompletoComponent } from './hilo-completo/hilo-completo.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DetallesComponent } from './detalles/detalles.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FilterPipe,
     ForoComponent,
     HiloCompletoComponent,
+    DetallesComponent,
   ],
   imports: [
     BrowserModule,

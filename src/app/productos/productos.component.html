@@ -15,12 +15,11 @@
     </div>
   </div>
   </div>
-  
-  
-  
     <div class="galeria-productos">
       <div class="producto-miniatura" *ngFor="let producto of productos | filter: filtroSeccion: filtroBusqueda">
-        <img [src]="producto.imagen" alt="Producto">
+        <a [routerLink]="['/detalle-producto/', producto.id]">
+          <img [src]="producto.imagen" alt="Producto">
+        </a>
       </div>
     </div>
   </section>

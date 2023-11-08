@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProductService } from '../service/productos.service';
+
 @Component({
   selector: 'app-productos',
   templateUrl: './productos.component.html',
@@ -6,49 +8,16 @@ import { Component } from '@angular/core';
 })
 
 export class ProductosComponent {
-  productos = [
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa1.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa1.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa2.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa4.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa5.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa6.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa7.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa8.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa9.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa1.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa1.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa2.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa4.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa5.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa6.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa7.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa8.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa9.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa1.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa1.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa2.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa4.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa5.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa6.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa7.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa8.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa9.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa1.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa1.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa2.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa4.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa5.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa6.jpg' },
-    { nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa7.jpg' },
-    { nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa8.jpg' },
-    { nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa9.jpg' },
-  ];
-
+  productos: any[] = []; // Define el tipo como un array de objetos o inicialízalo como un array vacío
   filtroSeccion = 'todos';
   filtroBusqueda = '';
 
+  constructor(private productService: ProductService) {
+    this.productos = this.productService.getProducts();
+  }
+
   filtrarProductos() {
+    // Tu lógica de filtro aquí sigue siendo válida
     this.filtroSeccion = (document.getElementById('filtroSecciones') as HTMLSelectElement).value;
     this.filtroBusqueda = (document.getElementById('inputBuscador') as HTMLInputElement).value.toLowerCase();
   }

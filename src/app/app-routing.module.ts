@@ -5,6 +5,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { ProductosComponent } from './productos/productos.component';
 import { ForoComponent } from './foro/foro.component';
 import { HiloCompletoComponent } from './hilo-completo/hilo-completo.component';
+import { DetallesComponent } from './detalles/detalles.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'productos', component: ProductosComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'foro', component: ForoComponent},
-  { path: 'hilo/:id', component: HiloCompletoComponent}
+  { path: 'hilo/:id', component: HiloCompletoComponent},
+  { path: 'detalle-producto/:id', component: DetallesComponent}
 ];
 
 @NgModule({
