@@ -6,6 +6,8 @@ import { ProductosComponent } from './productos/productos.component';
 import { ForoComponent } from './foro/foro.component';
 import { HiloCompletoComponent } from './hilo-completo/hilo-completo.component';
 import { DetallesComponent } from './detalles/detalles.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
@@ -13,6 +15,7 @@ const routes: Routes = [
   { path: 'productos', component: ProductosComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'foro', component: ForoComponent},
+  { path: 'registro', component: RegisterComponent},
   { path: 'hilo/:id', component: HiloCompletoComponent},
   { path: 'detalle-producto/:id', component: DetallesComponent}
 ];
