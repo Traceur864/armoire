@@ -1,0 +1,33 @@
+.perfil-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.perfil-header {
+  margin-bottom: 20px;
+}
+
+.perfil-header img {
+  width: 100px; /* Ajusta el tamaño de la foto de perfil según sea necesario */
+  border-radius: 50%;
+}
+
+.perfil-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.seccion {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  padding: 0 20px;
+}
+
+.seccion:last-child {
+  border-right: none;
+}
+
+.preview-seccion {
+  margin-top: 20px;
+}

@@ -8,6 +8,8 @@ import { HiloCompletoComponent } from './hilo-completo/hilo-completo.component';
 import { DetallesComponent } from './detalles/detalles.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { PerfilComponent } from './perfil/perfil.component';
+
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
@@ -18,7 +20,8 @@ const routes: Routes = [
   { path: 'registro', component: RegisterComponent},
   { path: 'login', component: LoginComponent},
   { path: 'hilo/:id', component: HiloCompletoComponent},
-  { path: 'detalle-producto/:id', component: DetallesComponent}
+  { path: 'detalle-producto/:id', component: DetallesComponent},
+  { path: 'perfil', component: PerfilComponent},
 ];
 
 @NgModule({

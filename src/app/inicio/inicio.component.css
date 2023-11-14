@@ -75,3 +75,24 @@ hr{
     transform: translateX(-100%);
   }
 }
+
+.ropa-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.ropa-grid {
+  display: flex;
+  overflow-x: auto;
+}
+
+.ropa-item {
+  flex: 0 0 auto; 
+  margin-right: 10px; 
+}
+
+.ropa-item img {
+  max-width: 100%;
+  max-height: 250px;
+  border-radius: 20px;
+}
