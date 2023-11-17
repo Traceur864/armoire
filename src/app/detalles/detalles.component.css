@@ -1,0 +1,84 @@
+/* product-details.component.css */
+
+.product-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 20px; /* Añadido un margen a la izquierda y derecha */
+}
+
+.product-details-container img {
+    max-width: 400px; /* Tamaño máximo de la imagen */
+    height: auto;
+}
+
+.product-comments {
+    flex: 1;
+    margin-left: 20px; /* Margen izquierdo entre la imagen y los comentarios */
+}
+
+/* Puedes ajustar estos estilos según tus preferencias */
+.product-details-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px; /* Ajusta según tus preferencias */
+}
+
+.product-info {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.social-section {
+    flex: 1;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Ajusta según tus preferencias */
+    margin-right: 15px;
+}
+
+.reactions button {
+    background-color: #4285f4; /* Ajusta según tus preferencias */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Ajusta según tus preferencias */
+    margin-right: 10px;
+}
