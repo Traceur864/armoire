@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'foro', component: ForoComponent},
   { path: 'registro', component: RegisterComponent},
+  { path: 'login', component: LoginComponent},
   { path: 'hilo/:id', component: HiloCompletoComponent},
   { path: 'detalle-producto/:id', component: DetallesComponent},
   { path: 'perfil', component: PerfilComponent},
