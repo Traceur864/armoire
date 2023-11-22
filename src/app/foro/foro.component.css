@@ -39,7 +39,7 @@
   
   .crear-hilo h2 {
     font-size: 20px;
-  }
+  } 
   
   .crear-hilo form {
     display: flex;
@@ -57,7 +57,6 @@
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    outline: 2px solid #BD9F69;
   }
   
   .crear-hilo button {
