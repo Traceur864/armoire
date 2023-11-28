@@ -1,46 +1,40 @@
-<!-- product-details.component.html -->
-
-<div class="product-details-container" *ngIf="producto">
-  <div class="product-image">
+<div class="product-details-container row">
+  <div class="product-image col-md-4 mx-auto">
     <img [src]="producto.imagen" alt="Producto">
   </div>
-
-  <div class="product-info">
+  <div class="product-info col-md-4 mx-auto">
     <h2>{{ producto.nombre }}</h2>
     <p>{{ producto.descripcion }}</p>
-    <!-- Agrega más detalles según tus necesidades -->
   </div>
-
-  <div class="social-section">
+  <div class="reactions col-md-4 mx-auto">
+    <button (click)="handleLikeClick()" class="like">
+      <i class="fas fa-heart"></i>
+    </button>{{ likes }}
+    <button (click)="handleLoveClick()" class="love">
+      <i class="fas fa-paint-brush"></i>
+    </button>{{ loves }}
+    <button (click)="handleDislikeClick()" class="dislike">
+      <i class="fas fa-star"></i>
+    </button>{{ dislikes }}
+  </div>
+  <div class="social-section col-md-4 mx-auto">
     <div class="user-info">
       <img src="/assets/img/perfil.jpg" alt="Avatar del usuario">
-      <div>
-        <p>Subido por: Nombre del Usuario</p>
-        <p>Seguidores: 1000</p>
-        <!-- Agrega más información del usuario según tus necesidades -->
+      <div class="user-details">
+        <p class="user-name">Romina</p>
+        <p class="user-info-text">Subido por: Romina</p>
+        <p class="user-info-text">Seguidores: 129932</p>
       </div>
     </div>
-
-    <div class="reactions">
-      <button>
-        <i class="fas fa-thumbs-up"></i> Me gusta
-      </button>
-      <button>
-        <i class="fas fa-comment"></i> Comentar
-      </button>
-    </div>
-
     <div class="comments-section">
       <h3>Comentarios</h3>
-      <!-- Aquí puedes mostrar la lista de comentarios -->
       <div class="comment">
         <img src="/assets/img/perfil.jpg" alt="Avatar del usuario">
-        <div>
-          <p>Nombre del Usuario</p>
-          <p>¡Hermoso producto!</p>
+        <div class="comment-details">
+          <p class="comment-user">Monica</p>
+          <p class="comment-text">Muy bonito vestido, lo tengo igual, lo recomiendo</p>
         </div>
       </div>
-      <!-- Agrega más comentarios según tus necesidades -->
     </div>
   </div>
 </div>

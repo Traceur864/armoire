@@ -5,13 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
   private productos = [
-    { id: 1, nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa1.jpg' },
+    { id: 1, nombre: 'Vestido amarillo y moño blanco', seccion: 'ropa', imagen: '/assets/img/ropa1.jpg' },
     { id: 2, nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa1.jpg' },
     { id: 4, nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa2.jpg' },
-    { id: 5, nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa4.jpg' },
+    { id: 5, nombre: 'Vestido amarillo y moño blanco', seccion: 'ropa', imagen: '/assets/img/ropa4.jpg' },
     { id: 6, nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa5.jpg' },
     { id: 7, nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa6.jpg' },
-    { id: 8, nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa7.jpg' },
+    { id: 8, nombre: 'Vestido amarillo y moño blanco', seccion: 'ropa', imagen: '/assets/img/ropa7.jpg' },
     { id: 9, nombre: 'Producto 2', seccion: 'accesorios', imagen: '/assets/img/ropa8.jpg' },
     { id: 10, nombre: 'Producto 3', seccion: 'ropa', imagen: '/assets/img/ropa9.jpg' },
     { id: 11, nombre: 'Producto 1', seccion: 'ropa', imagen: '/assets/img/ropa1.jpg' },

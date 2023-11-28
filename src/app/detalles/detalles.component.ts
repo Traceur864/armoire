@@ -9,6 +9,9 @@ import { ProductService } from '../service/productos.service';
 })
 export class DetallesComponent implements OnInit {
   producto: any;
+  likes: number = 120;
+  loves: number = 20;
+  dislikes: number = 60;
 
   constructor(private route: ActivatedRoute, private productosService: ProductService) {}
 
@@ -17,5 +20,17 @@ export class DetallesComponent implements OnInit {
       const productoId = +params['id'];
       this.producto = this.productosService.getProducts().find(producto => producto.id === productoId);
     });
+  }
+
+  handleLikeClick() {
+    this.likes++;
+  }
+
+  handleLoveClick() {
+    this.loves++;
+  }
+
+  handleDislikeClick() {
+    this.dislikes++;
   }
 }
