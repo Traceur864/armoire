@@ -1,3 +1,6 @@
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+
 <div class="container py-5 h-100">
   <div class="row d-flex justify-content-center align-items-center h-100">
     <div class="col-xl-10">
@@ -20,7 +23,7 @@
 
   <div class="form-outline mb-4">
     <label class="form-label" for="form2Example22">Contraseña</label>
-    <input type="password" id="form2Example22" class="form-control" [(ngModel)]="contrasena" name="contrasena" />
+    <input type="password" id="form2Example22" class="form-control" [(ngModel)]="contrasena" name="contrasena"/>
   </div>
 
   <button type="submit" class="btn btn-secondary btn-block fa-lg gradient-custom-2 mb-3">Iniciar Sesión</button>
@@ -31,7 +34,9 @@
           </div>
           <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
             <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-              <!-- <app-model-viewer></app-model-viewer> -->
+
+              <model-viewer style="width: 500px; height: 500px;" alt="" src="https://cdn.glitch.global/535d466a-45e0-4fab-8a07-d8445166e8c6/armoire3d.glb?v=1701223027117" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+
             </div>
           </div>
         </div>
